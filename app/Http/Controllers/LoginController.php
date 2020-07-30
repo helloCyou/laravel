@@ -17,7 +17,6 @@ class LoginController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());die();
         $data = $this->validate($request,[
             'email'=>'email|required',
             'password'=>'required|min:5'
